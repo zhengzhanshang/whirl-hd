@@ -1,0 +1,15 @@
+   snapshots/
+   *_state/
+   *.h5
+   evp_ic.h5
+   *.log
+   logger_info.txt
+   job-*.out
+   job-*.err
+   postrun_summary.txt
+   los_*/
+   gdep_los_*/
+   figures/figures/
+   *.pdf
+   __pycache__/
+   *.pyc
