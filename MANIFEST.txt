@@ -1,0 +1,185 @@
+# whirl-hd -- provenance of every code file
+# Merged from the check_versions.sh manifests of IGAM12WS (G=0.25 runs) and
+# GSC/IT010128 (G=4.5 runs), both built 2026-10-19. Files are byte-identical
+# to those copies unless marked RECOVERED or ADDED.
+# path | md5 | machine | copied from | note
+
+analysis/los_inversion.py
+    md5 320d5a4771713a42c636033b0932c0e9
+    machine both
+    from IGAM12WS .../PINN_1923/los_inversion.py; GSC /cl_tmp/shang/paper-redo_G=4.5/los_inversion.py
+    note: identical on both machines
+analysis/lsq_from_data.py
+    md5 176d096ac17a3371dc06f164e662de14
+    machine both
+    from IGAM12WS .../PINN_1923/lsq_from_data.py; GSC /cl_tmp/shang/paper-redo_G=4.5/m=3-15/m=5_s2s4_sweep/lsq_from_data.py
+    note: PINNED: produced Table 1, Sect. 4.1 and the 2026-10-19 verification reruns; identical on both machines
+analysis/lsq_hfree.py
+    md5 85e48511c09146a2d076eaf4879e299a
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/G=0.25_m=5_s2=0.19_s4=0.23/lsq_hfree.py
+    note: used for the h-free results at both G
+figures/make_figures.py
+    md5 e6b99ec271504bc940b3183e987ad531
+    machine -
+    from make_figure_new.py supplied by the author 2026-10-29
+    note: no earlier checksum on record; contains the corrected 2026-10-19 values
+postprocess/fit_growth.py
+    md5 48fae0d3fb3cc1e096583659af0d8dcf
+    machine both
+    from IGAM12WS .../only_h_large_G=10/fit_growth.py
+    note: identical on both machines
+postprocess/postrun_analyse.py
+    md5 079071bee93903839b8b3379f3d0f195
+    machine both
+    from IGAM12WS .../only_h_small_G=0.25_paper/postrun_analyse.py
+    note: identical on both machines
+reproduce/G0.25/run_pole_mask_G025.sh
+    md5 dae1b069154a5f560b72fbdb6954863a
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/run_pole_mask_G025.sh
+reproduce/G0.25/run_sec44_cadence.sh
+    md5 95773c4bedfa4328910e81b92e812d9e
+    machine -
+    from RECOVERED from the session record where it was written (2026-09-21)
+    note: no copy on disk; first ran 2026-09-21 with an earlier lsq_from_data.py. Re-run 2026-10-30 with the pinned version (rerun_stress_pairs_pinned.sh): reproduces the paper's values
+reproduce/G0.25/run_sec5_los.sh
+    md5 c559aa195ffb60129f309c3c80d2e41f
+    machine -
+    from RECOVERED from the session record where it was written (2026-09-21)
+    note: no copy on disk; first ran 2026-09-21 with an earlier lsq_from_data.py. Re-run 2026-10-30 with the pinned version (rerun_stress_pairs_pinned.sh): reproduces the paper's values
+reproduce/G0.25/run_table1_G025.sh
+    md5 bf29dde6c0b8a2d1eeee788cefe9faa1
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/run_table1_G025.sh
+reproduce/G0.25/run_verify_numbers_G025.sh
+    md5 ee54945eb11aa88420f6481ada75d969
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/run_verify_numbers_G025.sh
+reproduce/G4.5/make_case_s015_s015.sh
+    md5 7994647e4693242c1eeb8aa8ccf01534
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/m=3-15/m=5_s2s4_sweep/make_case_s015_s015.sh
+reproduce/G4.5/run_gdep_G4.5_m5.sh
+    md5 f700caa654449b9a21a45b0fb3b2c4a1
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/m=3-15/m=5_s2s4_sweep/run_gdep_G4.5_m5.sh
+    note: stage C also run in the G=0.25 folder
+reproduce/both/run_hfree_los.sh
+    md5 e8a7aa25744c59f20aa2cd8b8beb8210
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/G=0.25_m=5_s2=0.19_s4=0.23/run_hfree_los.sh
+simulation/G0.25_m5/cases/s2=0.03_s4=0.33/input.json
+    md5 927eef2c493fee7197a9aba95722774d
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.03_s4=0.33/input.json
+simulation/G0.25_m5/cases/s2=0.03_s4=0.33/run.sh
+    md5 76b38aa7449c96f194d6f6fd6adfd7df
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.03_s4=0.33/run.sh
+    note: run.sh differs between pairs (job name, MPI launcher)
+simulation/G0.25_m5/cases/s2=0.15_s4=0.15/input.json
+    md5 a21b1690b6050515e7d22d55bde8e1cc
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.15_s4=0.15/input.json
+simulation/G0.25_m5/cases/s2=0.15_s4=0.15/run.sh
+    md5 50caaa6c539fb675988f9cc68cd443e5
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.15_s4=0.15/run.sh
+    note: run.sh differs between pairs (job name, MPI launcher)
+simulation/G0.25_m5/cases/s2=0.15_s4=0.17/input.json
+    md5 b0aae9f46d3bd2f8e57002f73b7b34aa
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.15_s4=0.17/input.json
+    note: snap_dt 0.1 (the other five pairs use 0.5)
+simulation/G0.25_m5/cases/s2=0.15_s4=0.17/run.sh
+    md5 a2a4f46617d0f2f1136b348c5afa7c12
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.15_s4=0.17/run.sh
+    note: run.sh differs between pairs (job name, MPI launcher)
+simulation/G0.25_m5/cases/s2=0.19_s4=0.23/input.json
+    md5 0b66fe191ff21a51b7d0a94fb1f21999
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.19_s4=0.23/input.json
+simulation/G0.25_m5/cases/s2=0.19_s4=0.23/run.sh
+    md5 a6c55b15769826c39a17892043e14b9c
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.19_s4=0.23/run.sh
+    note: run.sh differs between pairs (job name, MPI launcher)
+simulation/G0.25_m5/cases/s2=0.25_s4=0.19/input.json
+    md5 24c4b214c5809999a72a6cb0893655b5
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.25_s4=0.19/input.json
+simulation/G0.25_m5/cases/s2=0.25_s4=0.19/run.sh
+    md5 d3b4405b3a8d4f5f2c5642c0b19e4470
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.25_s4=0.19/run.sh
+    note: run.sh differs between pairs (job name, MPI launcher)
+simulation/G0.25_m5/cases/s2=0.29_s4=0.03/input.json
+    md5 5e0cc9cb33135cbaf4687b7458f3691e
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.29_s4=0.03/input.json
+simulation/G0.25_m5/cases/s2=0.29_s4=0.03/run.sh
+    md5 0e87c1faf51d7cd2989ac47a3ef02c91
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.29_s4=0.03/run.sh
+    note: run.sh differs between pairs (job name, MPI launcher)
+simulation/G0.25_m5/evp_spherical_hd.py
+    md5 e90eba5aa5a14b478be18f433795424d
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.29_s4=0.03/evp_spherical_hd.py
+    note: identical in all 6 case folders; same file as the G=4.5 copy
+simulation/G0.25_m5/spherical-2d-hd-s2s4.py
+    md5 950e097e4b18fe281eb58b7f8b9d3f29
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.29_s4=0.03/spherical-2d-hd-s2s4.py
+    note: identical in all 6 G=0.25 case folders
+simulation/G0.25_m5/sw_model.py
+    md5 d0557899e4a18054095f9b9ff3ec4195
+    machine IGAM12WS
+    from /home/zshang/dedalus3/HD_SW_alpha_spherical_paper/only_h_small_G=0.25_paper/vary_s2s4_G=0.25_nu4-h=1e-4_paper/sweep_s2s4_pairs/s2=0.29_s4=0.03/sw_model.py
+    note: identical in all 6 case folders; same file as the G=4.5 copy
+simulation/G4.5_m5/evp_spherical_hd.py
+    md5 e90eba5aa5a14b478be18f433795424d
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/m=3-15/m=5_s2s4_sweep/s2=0.29_s4=0.03/evp_spherical_hd.py
+    note: identical in all 7 case folders
+simulation/G4.5_m5/input_template.json
+    md5 f543577da7384be9e8b7efe82356795c
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/m=3-15/m=5_s2s4_sweep/s2=0.29_s4=0.03/input.json
+    note: template built by check_versions.sh; s2, s4 set per pair from pairs.txt
+simulation/G4.5_m5/make_cases.sh
+    md5 7763dfaa91c0c259c0f3b23bc950feba
+    machine -
+    from ADDED for this repository
+    note: not used to produce data
+simulation/G4.5_m5/pairs.txt
+    md5 0015f12ca7c07a2c71b03db199e76d1d
+    machine GSC
+    from written by check_versions.sh
+simulation/G4.5_m5/run.sh
+    md5 1c1581aed00c99cbb90c90edee87347b
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/m=3-15/m=5_s2s4_sweep/s2=0.29_s4=0.03/run.sh
+    note: identical in all 7 case folders
+simulation/G4.5_m5/spherical-2d-hd-s2s4.py
+    md5 f02e9f3a629bd6ae066d2333bcd5d865
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/m=3-15/m=5_s2s4_sweep/s2=0.29_s4=0.03/spherical-2d-hd-s2s4.py
+    note: identical in all 7 G=4.5 case folders; newer than the G=0.25 copy
+simulation/G4.5_m5/sw_model.py
+    md5 d0557899e4a18054095f9b9ff3ec4195
+    machine GSC
+    from /cl_tmp/shang/paper-redo_G=4.5/m=3-15/m=5_s2s4_sweep/s2=0.29_s4=0.03/sw_model.py
+    note: identical in all 7 case folders
+tools/check_versions.sh
+    md5 9f19c6d0d8c867413f8c13c52f07c22e
+    machine both
+    from IGAM12WS + GSC
+    note: identical on both machines
+reproduce/G0.25/rerun_stress_pairs_pinned.sh
+    md5 fe5892990fd1b8b0c37acde588ab58ef
+    machine -
+    from ADDED for this repository (2026-10-29)
+    note: re-runs the two RECOVERED drivers with the pinned code and compares with the paper
